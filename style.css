@@ -1,0 +1,115 @@
+.body {
+  background-color: rgba(245, 242, 239, 0.932);
+}
+
+@page {
+  size: A5 Portrait;
+  scale: 80%;
+  
+}
+
+.addprescipfield {
+  background-color: #b282ec;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: #000000;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child() {
+  background-color: #dddddd;
+}
+
+.tbltxt {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+  
+  @font-face {
+    font-family: "QuickSand";
+    src: url("font/Quicksand-Medium.ttf");
+}
+
+@font-face {
+    font-family: "AmaticsBold";
+    src: url("font/AmaticSC-Bold.ttf");
+}
+
+@font-face {
+    font-family: "NeuzeitGro";
+    src: url("font/Neuzeit-Grotesk-Regular.ttf");
+}
+
+@font-face {
+    font-family: "COMIC";
+    src: url("font/COMIC.TTF");
+}
+
+
+* {
+  font-family: "NeuzeitGro";
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dot-carousel {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #ffffff;
+  box-shadow: 9984px 0 0 0 #ffffff, 9999px 0 0 0 #ffffff, 10014px 0 0 0 #ffffff;
+  -webkit-animation: dot-carousel 1.5s infinite linear;
+  animation: dot-carousel 1.5s infinite linear;
+}
+
+@-webkit-keyframes dot-carousel {
+  0% {
+      box-shadow: 9984px 0 0 -1px #ffffff, 9999px 0 0 1px #ffffff, 10014px 0 0 -1px #ffffff;
+  }
+  50% {
+      box-shadow: 10014px 0 0 -1px #ffffff, 9984px 0 0 -1px #ffffff, 9999px 0 0 1px #ffffff;
+  }
+  100% {
+      box-shadow: 9999px 0 0 1px #ffffff, 10014px 0 0 -1px #ffffff, 9984px 0 0 -1px #ffffff;
+  }
+}
+
+@keyframes dot-carousel {
+  0% {
+      box-shadow: 9984px 0 0 -1px #ffffff, 9999px 0 0 1px #ffffff, 10014px 0 0 -1px #ffffff;
+  }
+  50% {
+      box-shadow: 10014px 0 0 -1px #ffffff, 9984px 0 0 -1px #ffffff, 9999px 0 0 1px #ffffff;
+  }
+  100% {
+      box-shadow: 9999px 0 0 1px #ffffff, 10014px 0 0 -1px #ffffff, 9984px 0 0 -1px #ffffff;
+  }
+}
+
+.button1 {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
