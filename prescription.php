@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
 </head>
 
-<body class="body">
+<body class="body" style="color: #0E097D;">
     <div class="container ">
         <div class="row">
 
@@ -51,18 +51,18 @@
             <!-- <div class=" col-12 fs-3 fw-bold"><a href="customers.php">Back</a></div> -->
 
             <div class="col-lg-8 bg-body offset-lg-2 rounded mt-0 p-0" id="page">
-                <div class="row p-1">
+                <div class="row p-0">
 
                     <div class="col-12">
                         <div class="row">
                             <div class="col-8">
                                 <span class="col-4 text-lg-start title01">
-                                    <img src="logo.png" style="height: 70px; cursor: pointer;" onclick="himg();">
+                                    <img src="logo_prec.png" style="height: 90px; cursor: pointer;" onclick="himg();">
                                 </span>
-                                <span class="col-8 fs-3">VISION CONCEPT</span>
+                                <span class="col-8 fs-2">VISION CONCEPT</span>
                             </div>
 
-                            <div class="col-4 text-primary text-dark fw-bold  text-end" style="font-size: 10px;">
+                            <div class="col-4 fw-bold  text-end" style="font-size: 12px;">
 
                                 <span>211, Hospital Rd, Kalubowila.</span><br>
                                 <span>011 2765512, 071 1989195</span><br>
@@ -71,6 +71,10 @@
 
                         </div>
                     </div>
+                    <div class="col-12">
+                        <hr class="rounded mt-3 bg-dark">
+                    </div>
+
 
                     <?php
 
@@ -90,42 +94,55 @@
 
                     ?>
 
-                    <div class="mt-1">
-                        <div class="row">
-                            <div class="col-7">
-                                <div class="row">
-                                    <div class="col-3"><label class="form-label fw-bold" style="font-size: 10px;">Name:</label></div>
-                                    <div class="col-9"><label class="form-label" style="font-size: 10px;"><?php echo $prescription_data["name"]; ?></label></div>
-                                </div>
-                            </div>
+                    <div class="col-12 text-center mt-0">
+                        <span class="col-8 fs-1">The Prescription</span>
+                    </div>
 
-                            <?php
-                            $date = date('Y-m-d');
-                            ?>
-                            <div class="col-5">
-                                <div class="row">
-                                    <div class="col-3"><label class="form-label fw-bold" style="font-size: 10px;">Date:</label></div>
-                                    <div class="col-9"><label class="form-label" style="font-size: 10px;"><?php echo $prescription_data["date"]; ?></label></div>
-                                </div>
-                            </div>
 
-                            <div class="col-7">
-
-                                <label class="form-label fw-bold" style="font-size: 10px;">Occupation:</label>
-                                <label class="form-label" style="font-size: 10px;"><?php echo $prescription_data["occupation"]; ?></label>
-
-                            </div>
-
-                            <div class="col-5">
-                                <div class="row">
-                                    <div class="col-3"><label class="form-label fw-bold" style="font-size: 10px;">Age:</label></div>
-                                    <div class="col-9"><label class="form-label" style="font-size: 10px;"><?php echo $prescription_data["age"]; ?></label></div>
-                                </div>
-                            </div>
+                    <div class="mt-0">
+                        <div class="row p-3">
+                            <table class="table table-bordered " style="font-size: 12px;color: #0E097D;">
+                                <thead>
+                                    <tr class=" border-0 ">
+                                        <th colspan="1" class="border-0"></th>
+                                        <th colspan="3" class="text-center  prescriptablebordercolor">R</th>
+                                        <th colspan="3" class="text-center border-0">L</th>
+                                    </tr>
+                                    <tr class="prescriptablebordercolor">
+                                        <th colspan="1" class="border-1"></th>
+                                        <th class="text-center prescriptablebordercolor border-1">SPH</th>
+                                        <th class="text-center prescriptablebordercolor border-1">CYL</th>
+                                        <th class="text-center prescriptablebordercolor border-1">Axis</th>
+                                        <th class="text-center prescriptablebordercolor border-1">SPH</th>
+                                        <th class="text-center prescriptablebordercolor border-1">CYL</th>
+                                        <th class="text-center prescriptablebordercolor border-1">Axis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="prescriptablebordercolor" style="font-size: 15px;">
+                                        <td class=" text-center fw-bold tbltxt" style="font-size: 12px;width: 40px;">Dist.</td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["sph_r_dist"]; ?></td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["cyl_r_dist"]; ?></td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["axis_r_dist"]; ?></td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["sph_l_dist"]; ?></td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["cyl_l_dist"]; ?></td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["axis_l_dist"]; ?></td>
+                                    </tr>
+                                    <tr style="font-size: 15px;border-color: #0E097D;">
+                                        <td class="text-center fw-bold tbltxt" style="font-size: 12px;width: 40px;">Near</td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["sph_r_near"]; ?></td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["cyl_r_near"]; ?></td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["axis_r_near"]; ?></td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["sph_l_near"]; ?></td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["cyl_l_near"]; ?></td>
+                                        <td class="text-center prescriptablebordercolor border-1"><?php echo $prescription_data["axis_l_near"]; ?></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
-                    <div class="mt-1" style="font-size: 10px;">
+                    <div class="mt-0" style="font-size: 12px;">
                         <div class="row">
                             <div class="col-6 ">
                                 <div class="row">
@@ -156,50 +173,7 @@
                         </div>
                     </div>
 
-                    <div class="mt-0">
-                        <div class="row p-3">
-                            <table class="table table-bordered border-dark" style="font-size: 10px;">
-                                <thead>
-                                    <tr class="border border-0   border-dark">
-                                        <th colspan="1" class="border-0"></th>
-                                        <th colspan="3" class="text-center border-left-0">R</th>
-                                        <th colspan="3" class="text-center border-0">L</th>
-                                    </tr>
-                                    <tr class="border border-0 border-dark ">
-                                        <th colspan="1" class="border-0"></th>
-                                        <th class="text-center border-dark border border-1">SPH</th>
-                                        <th class="text-center border-dark border border-1">CYL</th>
-                                        <th class="text-center border-dark border border-1">Axis</th>
-                                        <th class="text-center border-dark border border-1">SPH</th>
-                                        <th class="text-center border-dark border border-1">CYL</th>
-                                        <th class="text-center border-dark border border-1">Axis</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class=" text-center pt-3 fw-bold text-dark tbltxt" style="font-size: 10px;width: 40px;">Dist <br />ance</td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["sph_r_dist"]; ?></td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["cyl_r_dist"]; ?></td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["axis_r_dist"]; ?></td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["sph_l_dist"]; ?></td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["cyl_l_dist"]; ?></td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["axis_l_dist"]; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center fw-bold pt-3 text-dark tbltxt" style="width: 40px;">Near</td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["sph_r_near"]; ?></td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["cyl_r_near"]; ?></td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["axis_r_near"]; ?></td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["sph_l_near"]; ?></td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["cyl_l_near"]; ?></td>
-                                        <td class="text-center pt-3 text-dark"><?php echo $prescription_data["axis_l_near"]; ?></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="mt-0" style="font-size: 10px;">
+                    <div class="mt-3" style="font-size: 12px;">
                         <div class="row">
                             <div class="col-3"><label class="form-label fw-bold text-decoration-underline">HBL</label></div>
                         </div>
@@ -215,87 +189,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4 mt-1 mx-3" style="font-size: 10px;">
-                        <div class="row">
-                            <div class="col-9">
-                                <input type="checkbox" class="form-check-input" id="btncheckhead" <?php if ($prescription_data["headache_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                    } ?> disabled>
-                                <label class="form-label fw-bold" for="btncheckhead">Headache</label>
-                            </div>
-                            <div class="col-9">
-                                <input type="checkbox" class="form-check-input" id="btnchecktear" <?php if ($prescription_data["tearing_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                } ?> disabled>
-                                <label class="form-label fw-bold" for="btnchecktear">Tearing</label>
-                            </div>
-                            <div class="col-9">
-                                <input type="checkbox" class="form-check-input" id="btncheckread" <?php if ($prescription_data["readness_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                    } ?> disabled>
-                                <label class="form-label fw-bold" for="btncheckread">Readness</label>
-                            </div>
-                            <div class="col-9">
-                                <input type="checkbox" class="form-check-input" id="btncheckblurv" <?php if ($prescription_data["blurvision_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                    } ?> disabled>
-                                <label class="form-label fw-bold" for="btncheckblurv">Blur Vission</label>
-                            </div>
-                            <div class="col-9">
-                                <label class="form-label fw-bold">Other:&nbsp;</label>
-                                <label class="form-label mt-0"><?php echo $prescription_data["other"]; ?></label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-7" style="font-size: 10px;">
-                        <div class="row">
-                            <table class="table table-bordered border-dark">
-                                <thead>
-                                    <tr class="border border-0   border-dark ">
-                                        <th colspan="1" class="border-0"></th>
-                                        <th colspan="1" class="fs-6 text-center border border-1   border-dark ">R</th>
-                                        <th colspan="1" class="fs-6 text-center border border-1   border-dark ">L</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center fw-bold text-dark">Colour Vission</td>
-                                        <td class="fs-6 text-center fw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckclvisr" <?php if ($prescription_data["col_vision_r_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                                                                                } ?> disabled></td>
-                                        <td class="fs-6 text-center  fw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckclvisl" <?php if ($prescription_data["col_vision_l_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                                                                                } ?> disabled></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center fw-bold text-dark">Amster Vission</td>
-                                        <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckamsvisr" <?php if ($prescription_data["amst_vision_r_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                                                                                } ?> disabled></td>
-                                        <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckamsvisl" <?php if ($prescription_data["amst_vision_l_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                                                                                } ?> disabled></td>
-                                    <tr>
-                                        <td class="text-center fw-bold text-dark">Convergence</td>
-                                        <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckconverr" <?php if ($prescription_data["conver_r_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                                                                                } ?> disabled></td>
-                                        <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckconverl" <?php if ($prescription_data["conver_l_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                                                                                } ?> disabled></td>
-                                    <tr>
-                                        <td class="text-center fw-bold text-dark">Pupil Refler</td>
-                                        <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckpuprefsr" <?php if ($prescription_data["pup_ref_r_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                                                                                } ?> disabled></td>
-                                        <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckpuprefl" <?php if ($prescription_data["pup_ref_l_id"] == "true") { ?>checked <?php } else {
-                                                                                                                                                                                                                                } ?> disabled></td>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-
-                    <div class="" style="font-size: 10px;">
-                        <div class="row">
-                            <label class="form-label fw-bold">Remarks:</label>
-                            <label class="form-label  mx-3"><?php echo $prescription_data["remark"]; ?></label>
-                        </div>
-                    </div>
-
-
-                    <div class="" style="font-size: 10px;">
+                    <div class="mt-3" style="font-size: 12px;">
                         <div class="row">
                             <div class="col-6">
                                 <label class="form-label fw-bold">PD &nbsp;</label>
@@ -304,6 +198,48 @@
                             <div class="col-6">
                                 <label class="form-label fw-bold">SH &nbsp;</label>
                                 <label class="form-label  mx-3"><?php echo $prescription_data["sh"]; ?></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-3" style="font-size: 12px;">
+                        <div class="row">
+                            <label class="form-label fw-bold">Remarks:</label>
+                            <label class="form-label mx-3"><?php echo $prescription_data["remark"]; ?></label>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="row">
+                                    <div class="col-3"><label class="form-label fw-bold" style="font-size: 12px;">Name:</label></div>
+                                    <div class="col-9"><label class="form-label" style="font-size: 12px;"><?php echo $prescription_data["name"]; ?></label></div>
+                                </div>
+                            </div>
+
+                            <?php
+                            $date = date('Y-m-d');
+                            ?>
+                            <div class="col-5">
+                                <div class="row">
+                                    <div class="col-3"><label class="form-label fw-bold" style="font-size: 12px;">Date:</label></div>
+                                    <div class="col-9"><label class="form-label" style="font-size: 12px;"><?php echo $prescription_data["date"]; ?></label></div>
+                                </div>
+                            </div>
+
+                            <div class="col-7">
+
+                                <label class="form-label fw-bold" style="font-size: 12px;">Occupation:</label>
+                                <label class="form-label" style="font-size: 12px;"><?php echo $prescription_data["occupation"]; ?></label>
+
+                            </div>
+
+                            <div class="col-5">
+                                <div class="row">
+                                    <div class="col-3"><label class="form-label fw-bold" style="font-size: 12px;">Age:</label></div>
+                                    <div class="col-9"><label class="form-label" style="font-size: 12px;"><?php echo $prescription_data["age"]; ?></label></div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -111,36 +111,6 @@
                             </div>
                         </div>
 
-                        <div class="mt-3">
-                            <div class="row">
-                                <div class="col-6 ">
-                                    <div class="row">
-                                        <div class="col-2">
-                                            <label class="form-label fw-bold mt-4">VA</label>
-                                        </div>
-                                        <div class="col-9">
-                                            <label class="form-label fw-bold">R:&nbsp;</label>
-                                            <label class="form-label"><input type="text" class="form-control" placeholder="Enter" id="va_r"></label><br />
-                                            <label class="form-label fw-bold">L: &nbsp;</label>
-                                            <label class="form-label"><input type="text" class="form-control" placeholder="Enter" id="va_l"></label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="row">
-                                        <div class="col-2">
-                                            <label class="form-label fw-bold mt-3">PH</label>
-                                        </div>
-                                        <div class="col-9">
-                                            <label class="form-label fw-bold">R:&nbsp;</label>
-                                            <label class="form-label"><input type="text" class="form-control" placeholder="Enter" id="ph_r"></label><br />
-                                            <label class="form-label fw-bold">L:&nbsp;</label>
-                                            <label class="form-label"><input type="text" class="form-control" placeholder="Enter" id="ph_l"></label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="mt-5">
                             <div class="row">
@@ -208,6 +178,38 @@
                             </div>
                         </div>
 
+                        <div class="mt-5">
+                            <div class="row">
+                                <div class="col-6 ">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <label class="form-label fw-bold mt-4">VA</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <label class="form-label fw-bold">R:&nbsp;</label>
+                                            <label class="form-label"><input type="text" class="form-control" placeholder="Enter" id="va_r"></label><br />
+                                            <label class="form-label fw-bold">L: &nbsp;</label>
+                                            <label class="form-label"><input type="text" class="form-control" placeholder="Enter" id="va_l"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <label class="form-label fw-bold mt-3">PH</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <label class="form-label fw-bold">R:&nbsp;</label>
+                                            <label class="form-label"><input type="text" class="form-control" placeholder="Enter" id="ph_r"></label><br />
+                                            <label class="form-label fw-bold">L:&nbsp;</label>
+                                            <label class="form-label"><input type="text" class="form-control" placeholder="Enter" id="ph_l"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                         <div class="" style="font-size: 12px;">
                             <div class="row">
                                 <div class="col-3"><label class="form-label fw-bold text-decoration-underline">HBL</label></div>
@@ -224,72 +226,12 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-12 mt-5 mx-3">
-                            <div class="row">
-                                <div class="col-9">
-                                    <input type="checkbox" class="form-check-input" id="btncheckhead">
-                                    <label class="form-label fw-bold" for="btncheckhead">Headache</label>
-                                </div>
-                                <div class="col-9">
-                                    <input type="checkbox" class="form-check-input" id="btnchecktear">
-                                    <label class="form-label fw-bold" for="btnchecktear">Tearing</label>
-                                </div>
-                                <div class="col-9">
-                                    <input type="checkbox" class="form-check-input" id="btncheckread">
-                                    <label class="form-label fw-bold" for="btncheckread">Readness</label>
-                                </div>
-                                <div class="col-9">
-                                    <input type="checkbox" class="form-check-input" id="btncheckblurv">
-                                    <label class="form-label fw-bold" for="btncheckblurv">Blur Vission</label>
-                                </div>
-                                <div class="col-9">
-                                    <label class="form-label fw-bold">Other:&nbsp;</label>
-                                    <label class="form-label mt-0 col-12"><input type="text" class="form-control" placeholder="Enter" id="other"></label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-7 col-12 mt-3">
-                            <div class="row">
-                                <table class="table table-bordered border-dark">
-                                    <thead>
-                                        <tr class="border border-0   border-dark ">
-                                            <th colspan="1" class="border-0"></th>
-                                            <th colspan="1" class="fs-6 text-center border border-1   border-dark ">R</th>
-                                            <th colspan="1" class="fs-6 text-center border border-1   border-dark ">L</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-center fw-bold text-dark">Colour Vission</td>
-                                            <td class="fs-6 text-center fw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckclvisr"></td>
-                                            <td class="fs-6 text-center  fw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckclvisl"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center fw-bold text-dark">Amster Vission</td>
-                                            <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckamsvisr"></td>
-                                            <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckamsvisl"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center fw-bold text-dark">Convergence</td>
-                                            <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckconverr"></td>
-                                            <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckconverl"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center fw-bold text-dark">Pupil Refler</td>
-                                            <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckpuprefsr"></td>
-                                            <td class="fs-6 text-centerfw-bold text-dark"><input type="checkbox" class="form-check-input" id="btncheckpuprefl"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
 
                         <div class="mt-5">
                             <div class="row">
                                 <label class="form-label fw-bold">Remarks:</label>
-                                <label class="form-label  mx-3"><input type="text" class="form-control" placeholder="Enter" id="remarks"></label>
+                                <label class="form-label  mx-3"><textarea id="remarks"  class="form-control" placeholder="Enter" name="w3review" rows="4" cols="100" ></textarea></label>
+                                <!-- <label class="form-label  mx-3"><input type="text" class="form-control" placeholder="Enter" id="remarks"></label>   -->
                             </div>
                         </div>
 

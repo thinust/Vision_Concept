@@ -5,7 +5,10 @@
 @page {
   size: A5 Portrait;
   scale: 80%;
-  
+}
+
+.prescriptablebordercolor{
+  border-color: #0E097D;
 }
 
 .addprescipfield {
@@ -16,12 +19,10 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  border: #000000;
 }
 
 td,
 th {
-  border: 1px solid #000000;
   text-align: center;
   padding: 8px;
 }
@@ -35,30 +36,29 @@ tr:nth-child() {
   text-orientation: mixed;
 }
 hr.rounded {
-    border-top: 8px solid #bbb;
-    border-radius: 5px;
-  }
-  
-  @font-face {
-    font-family: "QuickSand";
-    src: url("font/Quicksand-Medium.ttf");
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
 }
 
 @font-face {
-    font-family: "AmaticsBold";
-    src: url("font/AmaticSC-Bold.ttf");
+  font-family: "QuickSand";
+  src: url("font/Quicksand-Medium.ttf");
 }
 
 @font-face {
-    font-family: "NeuzeitGro";
-    src: url("font/Neuzeit-Grotesk-Regular.ttf");
+  font-family: "AmaticsBold";
+  src: url("font/AmaticSC-Bold.ttf");
 }
 
 @font-face {
-    font-family: "COMIC";
-    src: url("font/COMIC.TTF");
+  font-family: "NeuzeitGro";
+  src: url("font/Neuzeit-Grotesk-Regular.ttf");
 }
 
+@font-face {
+  font-family: "COMIC";
+  src: url("font/COMIC.TTF");
+}
 
 * {
   font-family: "NeuzeitGro";
@@ -84,25 +84,31 @@ a:hover {
 
 @-webkit-keyframes dot-carousel {
   0% {
-      box-shadow: 9984px 0 0 -1px #ffffff, 9999px 0 0 1px #ffffff, 10014px 0 0 -1px #ffffff;
+    box-shadow: 9984px 0 0 -1px #ffffff, 9999px 0 0 1px #ffffff,
+      10014px 0 0 -1px #ffffff;
   }
   50% {
-      box-shadow: 10014px 0 0 -1px #ffffff, 9984px 0 0 -1px #ffffff, 9999px 0 0 1px #ffffff;
+    box-shadow: 10014px 0 0 -1px #ffffff, 9984px 0 0 -1px #ffffff,
+      9999px 0 0 1px #ffffff;
   }
   100% {
-      box-shadow: 9999px 0 0 1px #ffffff, 10014px 0 0 -1px #ffffff, 9984px 0 0 -1px #ffffff;
+    box-shadow: 9999px 0 0 1px #ffffff, 10014px 0 0 -1px #ffffff,
+      9984px 0 0 -1px #ffffff;
   }
 }
 
 @keyframes dot-carousel {
   0% {
-      box-shadow: 9984px 0 0 -1px #ffffff, 9999px 0 0 1px #ffffff, 10014px 0 0 -1px #ffffff;
+    box-shadow: 9984px 0 0 -1px #ffffff, 9999px 0 0 1px #ffffff,
+      10014px 0 0 -1px #ffffff;
   }
   50% {
-      box-shadow: 10014px 0 0 -1px #ffffff, 9984px 0 0 -1px #ffffff, 9999px 0 0 1px #ffffff;
+    box-shadow: 10014px 0 0 -1px #ffffff, 9984px 0 0 -1px #ffffff,
+      9999px 0 0 1px #ffffff;
   }
   100% {
-      box-shadow: 9999px 0 0 1px #ffffff, 10014px 0 0 -1px #ffffff, 9984px 0 0 -1px #ffffff;
+    box-shadow: 9999px 0 0 1px #ffffff, 10014px 0 0 -1px #ffffff,
+      9984px 0 0 -1px #ffffff;
   }
 }
 
